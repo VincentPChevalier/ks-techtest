@@ -1,0 +1,10 @@
+@mixin heading-style($font-family, $font-color, $font-size){
+	font-family: $font-family;
+	color:$font-color;
+	font-size:$font-size;
+	margin: 0;
+}
+
+h1{
+	@include heading-style($headingFont, #fff, 2.8rem);
+}
