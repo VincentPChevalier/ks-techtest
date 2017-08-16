@@ -38,16 +38,6 @@ header{
 	}
 }
 
-// .counter {
-// 	width: 20px;
-// 	height: 20px;
-// 	background: black;
-// 	color: #fff;
-// 	position: fixed;
-// 	top: 120px;
-// 	right: 0;
-// }
-
 .top-nav{
 	display: flex;
 	flex-direction:row;
@@ -66,7 +56,7 @@ header{
 	li{
 		position: relative;
 		&:hover .dropdown{
-			display: block;
+			display: inline-block;
 		}
 	}
 	.login-area{
@@ -81,7 +71,11 @@ header{
 .dropdown{
 	display: none;
 	position: absolute;
-	width: 200px;
+	width: 250px;
+	padding: 10px;
 	background-color: #fff;
-	top: 0;
+	top: 20px;
+	border:.25px solid $strokeShadows;
+	border-radius: 5px;
+	box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.1);
 }

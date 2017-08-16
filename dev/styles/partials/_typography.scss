@@ -88,8 +88,9 @@ blockquote{
 
 ul.dropdown a{
 	@include link-style($typeColor, 1.6rem, 300);
+	line-height: 5rem;
 	&:hover{
-		background-color: $accent;
+		color: $accent;
 	}
 }
 

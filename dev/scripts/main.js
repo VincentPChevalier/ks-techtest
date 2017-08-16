@@ -4,9 +4,9 @@ $(document).ready(function(){
 		scrollTop = $(window).scrollTop();
 
 		
-		if (scrollTop >= 200) {
+		if (scrollTop >= 800) {
 			$('.scrolled-nav').removeClass('start-nav');
-		} else if (scrollTop < 200) {
+		} else if (scrollTop < 800) {
 			$('.scrolled-nav').addClass('start-nav');
 		} 
 		
@@ -14,5 +14,6 @@ $(document).ready(function(){
 
 	window.sr = ScrollReveal({ duration: 2000 });
 	sr.reveal('.products');
+	sr.reveal('.rows');
 	
 });
