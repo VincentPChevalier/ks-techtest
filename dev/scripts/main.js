@@ -11,5 +11,8 @@ $(document).ready(function(){
 		} 
 		
 	}); 
+
+	window.sr = ScrollReveal({ duration: 2000 });
+	sr.reveal('.products');
 	
 });

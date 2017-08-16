@@ -4,6 +4,10 @@
 @import 'partials/header';
 @import 'partials/hero';
 @import 'partials/products';
+@import 'partials/features';
+@import 'partials/quotes';
+@import 'partials/demo';
+@import 'partials/footer';
 
 html{
 	font-size:62.5%;
@@ -13,7 +17,7 @@ body{
 	font-family:$bodyFont;
 	font-size: 1.6rem;
 	color:$typeColor;
-	padding-top: 94px;
+	padding-top: 60px;
 }
 
 .wrapper{

@@ -1,0 +1,17 @@
+.quotes{
+	margin: 128px 0;
+}
+
+.quotes-heading{
+	margin-bottom: 128px;
+	position: relative;
+	&::after{
+		position: absolute;
+		content:"";
+		border-top: 5px solid $typeColor;
+		margin: 2rem 0;
+		display: block;
+		width: 20rem;
+		right: 0;
+	}
+}

@@ -1,12 +1,13 @@
 .hero{
-	height:1020px;
+	height:800px;
 	position: relative;
+	margin-bottom:0;
 }
 
 .hero__content{
 	display: flex;
 	position: relative;
-	z-index: 20;
+	z-index: 100;
 	.hero__content--text{
 		display: flex;
 		flex-direction:column;
@@ -21,22 +22,22 @@
 		}
 	}
 	.hero__content--logo{
-		width: 40%;
+		width: 55%;
 		transform:rotate(-45deg) translate(-10%, 10%);
 		img{
-			max-width: 500px;
+			max-width: 600px;
 		}
 	}
 }
 
 .hero-diag{
 	position: absolute;
-	transform:skew(-68deg) translateX(-71%);
+	transform:skew(-72deg) translateX(-71%);
 	background-color: $primaryMuted;
 	top: 0;
 	z-index: 10;
 	overflow: hidden;
-	width: 170%;
+	width: 250%;
 	height: 100%;
 	
 }

@@ -1,0 +1,31 @@
+footer{
+	margin: 128px 0;
+}
+
+.footer-menu{
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	li{
+		display: flex;
+		flex-direction:column;
+		justify-content:space-between;
+	}
+}
+
+.footer-menu__sub, .footer-menu__sub--bold li{
+	margin-bottom: 50px;
+}
+
+.socials-menu{
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	a{
+		font-size: 2.4rem;
+		color:$typeColor;
+		&:hover{
+			color:$primary;
+		}
+	}
+}

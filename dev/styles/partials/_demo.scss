@@ -1,0 +1,11 @@
+.demo{
+	background-color: $primaryMuted;
+	padding: 64px 0;
+}
+
+.demo__content{
+	display: flex;
+	justify-content:space-between;
+	align-items:flex-end;
+	flex-wrap:wrap;
+}
