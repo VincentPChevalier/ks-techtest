@@ -1,0 +1,9 @@
+.product__cards--item{
+	padding: 20px;
+	width: calc(50% - 12px);
+	margin-right: 12px;
+	border: 1px solid $strokeShadows;
+	.card-icon{
+		width: 100px;
+	}
+}

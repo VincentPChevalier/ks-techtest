@@ -5,13 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>RABN | Applied Cognitive Artificial Intelligence (ACAI)</title>
 	<link type="image/png" href="./assets/rabn-favicon.png" rel="icon">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,500,500i,700|Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,500,700|Source+Sans+Pro" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
 </head>
 <body>
-	<header>
-		<nav class="top-nav">
-			<div class="wrapper">
+	<header class="fixed scrolled-nav">
+		<div class="wrapper">
+			<nav class="top-nav">
 				<h1>RABN</h1>
 				<ul class="main-menu">
 					<li>
@@ -49,57 +49,61 @@
 					<li>
 						<a href="#">Support</a>
 					</li>
-					<li>
+					<li class="login-area">
 						<button class="demo-btn">Request A Demo</button>
-					</li>
-					<li>
 						<a href="#">Log In</a>
 					</li>
 				</ul><!--main-menu-->
-			</div><!--wrapper-->
-		</nav><!--top nav-->
+			</nav><!--top nav-->
+		</div><!--wrapper-->
 	</header>
 
 	<main>
 		<section class="hero">
+			<div class="diag hero-diag"></div>
+			<div class="diag lower-diag"></div>
 			<div class="wrapper">
-				<article class="hero__text">
-					<q class="tagline">Get more from your documents and unstructured data</q>
-					<p>RABN’s Applied Cognitive Artificial Intelligence platform, RABN ACAI, powers a number of applications to automatically read, interpret and summarise key information from documents and unstructured data.</p>
-					<button class="demo-btn">Request A Demo</button>
-				</article><!--intro-->
-				<figure class="hero__logo">
-					<img src="assets/brain-clouds-yellow.png" alt="RABN Brain Logo">
-				</figure><!--brain-->
+				<div class="hero__content">
+					<article class="hero__content--text">
+						<q class="tagline">Get more from your documents and unstructured data</q>
+						<p>RABN’s Applied Cognitive Artificial Intelligence platform, RABN ACAI, powers a number of applications to automatically read, interpret and summarise key information from documents and unstructured data.</p>
+						<button class="demo-btn">Request A Demo</button>
+					</article><!--hero__content-text-->
+					<figure class="hero__content--logo">
+						<img src="assets/brain-clouds-yellow.png" alt="RABN Brain Logo">
+					</figure><!--brain-->
+				</div>
 			</div><!--wrapper-->
 		</section><!--hero-->
 		<section class="products">
 			<div class="wrapper">
 				<h2>Products</h2>
-				<article class="product__card">
-					<figure class="card-icon">
-						<img src="assets/extract-file-red-np.png" alt="RABN Extract Icon">
-					</figure>
-					<h3>RABN Extract</h3>
-					<p class="summary">Automatic Content Summarisation and Extraction</p>
-					<p>RABN Extract uses Artificial Intelligence to automatically read, interpret and distil key information from documents and unstructured data into a desired business output. It enables organisations to increase efficiencies, reduce costs, mitigate risk by eradicating human error, as well as increasing staff morale.</p>
-				</article><!--product-card-->
-				<article class="product__card">
-					<figure class="card-icon">
-						<img src="assets/refine-file-red-np.png" alt="RABN Refine Icon">
-					</figure>
-					<h3>RABN Refine</h3>
-					<p class="summary">Automatic Data Categorization &amp; Management</p>
-					<p>Discovery and Records Management in place of your entire electronic document estate. RABN Refine allows you to intelligently sub-divide your data into clear scopes and refinements and to apply appropriate policies for retention, disposal and other controls for such considerations as sensitivity control.</p>
-				</article><!--product-card-->
-				<article class="product__card">
-					<figure class="card-icon">
-						<img src="assets/connect-file-red-np.png" alt="RABN Connect Icon">
-					</figure>
-					<h3>RABN Connect Enterprise</h3>
-					<p class="summary">Advanced Enterprise Search</p>
-					<p>RABN Connect Enterprise is an innovative approach to capturing, finding, managing and collaborating on your organisation’s hard won knowledge and experience, leveraging the capability to navigate links between knowledge types across the enterprise. It can learn from behaviour and establish explicit and implicit links between data objects and people.</p>
-				</article><!--product-card-->
+				<section class="product__cards">
+					<article class="product__cards--item">
+						<figure class="card-icon">
+							<img src="assets/extract-file-red-np.png" alt="RABN Extract Icon">
+						</figure>
+						<h3>RABN Extract</h3>
+						<p class="summary">Automatic Content Summarisation and Extraction</p>
+						<p>RABN Extract uses Artificial Intelligence to automatically read, interpret and distil key information from documents and unstructured data into a desired business output. It enables organisations to increase efficiencies, reduce costs, mitigate risk by eradicating human error, as well as increasing staff morale.</p>
+					</article><!--product-card-->
+					<article class="product__cards--item">
+						<figure class="card-icon">
+							<img src="assets/refine-file-red-np.png" alt="RABN Refine Icon">
+						</figure>
+						<h3>RABN Refine</h3>
+						<p class="summary">Automatic Data Categorization &amp; Management</p>
+						<p>Discovery and Records Management in place of your entire electronic document estate. RABN Refine allows you to intelligently sub-divide your data into clear scopes and refinements and to apply appropriate policies for retention, disposal and other controls for such considerations as sensitivity control.</p>
+					</article><!--product-card-->
+					<article class="product__cards--item">
+						<figure class="card-icon">
+							<img src="assets/connect-file-red-np.png" alt="RABN Connect Icon">
+						</figure>
+						<h3>RABN Connect Enterprise</h3>
+						<p class="summary">Advanced Enterprise Search</p>
+						<p>RABN Connect Enterprise is an innovative approach to capturing, finding, managing and collaborating on your organisation’s hard won knowledge and experience, leveraging the capability to navigate links between knowledge types across the enterprise. It can learn from behaviour and establish explicit and implicit links between data objects and people.</p>
+					</article><!--product-card-item-->
+				</section><!--product-cards-->
 				<button class="demo-btn">Request A Demo</button>
 			</div><!--wrapper-->
 		</section><!--products-->
@@ -248,7 +252,7 @@
 			</ul><!--footer-menu-->
 		</div><!--wrapper-->
 	</footer>
-	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script src="/public/scripts/main.js"></script>
 </body>
 </html>

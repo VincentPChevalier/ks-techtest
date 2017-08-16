@@ -1,0 +1,42 @@
+.hero{
+	height:1020px;
+	position: relative;
+}
+
+.hero__content{
+	display: flex;
+	position: relative;
+	z-index: 20;
+	.hero__content--text{
+		display: flex;
+		flex-direction:column;
+		justify-content:flex-end;
+		align-items:flex-start;
+		width: 58%;
+		margin-right: 2%;
+		margin-bottom: 40px;
+		color:#fff;
+		button{
+			margin-top: 40px;
+		}
+	}
+	.hero__content--logo{
+		width: 40%;
+		transform:rotate(-45deg) translate(-10%, 10%);
+		img{
+			max-width: 500px;
+		}
+	}
+}
+
+.hero-diag{
+	position: absolute;
+	transform:skew(-68deg) translateX(-71%);
+	background-color: $primaryMuted;
+	top: 0;
+	z-index: 10;
+	overflow: hidden;
+	width: 170%;
+	height: 100%;
+	
+}
